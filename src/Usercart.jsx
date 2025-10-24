@@ -1,7 +1,10 @@
 import { Fragment } from "react/jsx-runtime"
 import "./Usercart.css"
+import img1 from './assets/images/e2887132-4832-4534-95c4-a522eaed8975.jpg'
+import img2 from './assets/images/f80a8d47-99ec-4725-8409-628117ce9a93.jpg'
+import img3 from './assets/images/f3711a11-0bb2-4b90-bfc4-e2c859784f36.jpg'
 
-let skils = ["UI/UX"," HTML","CSS","JAVASCRIPT","REACT","NODE.js","bootstrap"]
+
 
 const userdata = [
   {
@@ -10,7 +13,7 @@ const userdata = [
   job:"Frontend developer",
   skils : ["UI/UX"," HTML","CSS","JAVASCRIPT","REACT","NODE.js","bootstrap"],
   status : false ,
-  profile : "./public/images/e2887132-4832-4534-95c4-a522eaed8975.jpg"
+  profile : img1
   },
   {
   username : "poonsolai",
@@ -18,7 +21,7 @@ const userdata = [
   job:"Frontend developer",
   skils : ["UI/UX"," HTML","CSS","JAVASCRIPT","REACT","NODE.js","bootstrap"],
   status : true ,
-  profile : "./public/images/f80a8d47-99ec-4725-8409-628117ce9a93.jpg"
+  profile :img2
   },
   {
   username : "stony stark",
@@ -26,7 +29,7 @@ const userdata = [
   job:"Frontend developer",
   skils : ["UI/UX"," HTML","CSS","JAVASCRIPT","REACT","NODE.js","bootstrap","angular"],
   status : false ,
-  profile : "./public/images/f3711a11-0bb2-4b90-bfc4-e2c859784f36.jpg"
+  profile : img3
   },
    {
   username : "stark",
@@ -34,7 +37,7 @@ const userdata = [
   job:"Frontend developer",
   skils : ["UI/UX"," HTML","CSS","JAVASCRIPT","REACT","NODE.js","bootstrap","angular"],
   status : true ,
-  profile : "./public/images/f80a8d47-99ec-4725-8409-628117ce9a93.jpg"
+  profile : img1
   }
 ]
 
@@ -82,7 +85,7 @@ function Usercart() {
       skils = {user.skils}
       profile = {user.profile}
       />))}
-      <User name="pavithra" city="Chennai" job="Fullstack developer" status={true} skils={['html','css','javascript','bootstrap','react','nodejs','python','express','mangodb']} profile="./public/images/f80a8d47-99ec-4725-8409-628117ce9a93.jpg"/>
+      <User name="pavithra" city="Chennai" job="Fullstack developer" status={true} skils={['html','css','javascript','bootstrap','react','nodejs','python','express','mangodb']} profile={img2}/>
     </Fragment>
   )
 }
